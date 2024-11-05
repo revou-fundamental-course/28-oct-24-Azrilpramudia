@@ -1,0 +1,101 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling pada Body */
+header {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* styling h1 */
+h1 {
+    margin: 0;
+}
+
+/* styling class .container */
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+/* styling tag article */
+article {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+/* styling class .bmi-calculator */
+.bmi-calculator input[type="number"], 
+.bmi-calculator input[type="radio"] {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* styling class .gender-radio */
+.gender-radio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* styling class .gender-radio label */
+.gender-radio label {
+    margin-right: 20px;
+}
+
+/* styling input radio button */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+
+/* styling button  */
+button {
+    padding: 10px 15px;
+    background-color: #008cba;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* styling button menggunakan hover  */
+button:hover {
+    background-color: #005f5f;
+}
+
+/* styling id bmi-value */
+#bmi-value {
+    color: red;
+    font-size: 2.5em;
+}
+
+/* styling footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+}

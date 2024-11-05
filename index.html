@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Azril Pramudia Anugrah" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Kalkulator BMI</h1>
+      <p>
+        Gunakan kalkulator BMI untuk mengetahui apakah berat badan Anda ideal,
+        berlebih, atau kurang.
+      </p>
+    </header>
+
+    <!-- Form Input BMI -->
+    <section class="container">
+      <article class="bmi-calculator">
+        <h2>Masukkan Data Anda</h2>
+        <p>
+          Masukkan berat badan, tinggi badan, usia, dan jenis kelamin untuk
+          menghitung BMI Anda.
+        </p>
+
+        <!-- Form Input Jenis Kelamin -->
+        <form id="bmi-form">
+          <label for="gender">Jenis Kelamin:</label><br />
+          <div class="gender-radio">
+            <input type="radio" id="male" name="gender" value="Laki-Laki" />
+            <label for="male">Laki-Laki</label><br />
+            <input type="radio" id="female" name="gender" value="Wanita" />
+            <label for="female">Wanita</label>
+          </div>
+          <br />
+
+          <!-- Label & Input Berat Badan  -->
+          <label for="weight">Berat Badan (kg):</label>
+          <input
+            type="number"
+            id="weight"
+            placeholder="Masukkan berat badan"
+          /><br />
+
+          <!-- Usia  -->
+          <label for="age">Usia (tahun):</label>
+          <input type="number" id="age" placeholder="Masukkan usia" /><br />
+
+          <!-- Tinggi Badan  -->
+          <label for="height">Tinggi Badan (cm):</label><br />
+          <input
+            type="number"
+            id="height"
+            placeholder="Masukkan tinggi badan"
+          /><br />
+
+          <!-- Form Button -->
+          <button type="button" onclick="calculateBMI()">Hitung BMI</button>
+          <button type="reset" onclick="resetForm()">Reset</button>
+        </form>
+      </article>
+
+      <!-- Hasil BMI Yang Di Tampilkan -->
+      <article class="bmi-result" id="bmi-result" style="display: none">
+        <h2>Hasil BMI Anda</h2>
+        <p id="bmi-status"></p>
+        <h3 id="bmi-value"></h3>
+        <p id="bmi-description"></p>
+      </article>
+    </section>
+
+    <!-- footer  -->
+    <footer>
+      <p>&copy; 2024 BMI Kalkulator. RevoU Fundamental Course</p>
+    </footer>
+
+    <!-- Script Javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
